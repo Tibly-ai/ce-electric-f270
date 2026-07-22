@@ -16,44 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style type="text/tailwindcss">
-@theme {
-  --color-brand-50: #F5F2ED;
-  --color-brand-100: #E9E4DC;
-  --color-brand-200: #DCD1C1;
-  --color-brand-300: #C6B198;
-  --color-brand-400: #AE9270;
-  --color-brand-500: #A67C52;
-  --color-brand-600: #8B6239;
-  --color-brand-700: #6F4E2E;
-  --color-brand-800: #584127;
-  --color-brand-900: #4B3621;
-
-  --color-surface: #FFFFFF;
-  --color-ink: #2B2620;
-
-  --font-display: "Cormorant", serif;
-  --font-body: "Karla", sans-serif;
-
-  --radius-none: 0px;
-  --radius-sm: 0px;
-  --radius-md: 0px;
-  --radius-lg: 0px;
-}
-
-@layer components {
-  .btn {
-    @apply inline-flex items-center justify-center bg-brand-900 text-surface font-body text-xs uppercase tracking-widest px-6 py-3 rounded-none hover:bg-brand-700 transition-colors;
-  }
-  .btn-secondary {
-    @apply inline-flex items-center justify-center border border-ink text-ink font-body text-xs uppercase tracking-widest px-6 py-3 rounded-none hover:bg-ink hover:text-surface transition-colors;
-  }
-  .card {
-    @apply bg-surface border border-ink/10 p-8;
-  }
-}
-</style>
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <!-- block:header -->
@@ -212,6 +175,9 @@
   </div>
 </section>
 <!-- /block:contact-cta -->
+<!-- block:booking -->
+<section data-block style="padding:72px 24px;font-family:inherit;color:inherit"><div style="max-width:720px;margin:0 auto"><h2 style="font-size:clamp(26px,3.5vw,34px);font-weight:700;line-height:1.2;margin:0 0 10px">Book an appointment</h2><p style="margin:0 0 36px;opacity:0.72;font-size:16px;line-height:1.6">Pick a time that works for you — you'll get a calendar invite right away.</p><div data-tibly-booking><p style="opacity:0.75">Online booking is loading — if it doesn't appear, please reach out to us to schedule.</p></div></div></section>
+<!-- /block:booking -->
 <!-- block:footer -->
 <footer class="bg-brand-900 text-brand-50">
   <div class="mx-auto max-w-6xl px-6 py-14 grid gap-12 md:grid-cols-3">
